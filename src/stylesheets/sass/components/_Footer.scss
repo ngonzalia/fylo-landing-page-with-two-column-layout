@@ -1,0 +1,149 @@
+.footer {
+  background: #07043B;
+  padding: 65px 39px 42px 39px;
+  // desktop
+  @media (min-width: 1024px) {
+    padding: 92px 0 86px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+
+  &__logo {
+    width: 105px;
+    height: 30px;
+    // talbet
+    @media (min-width: 768px) {
+      width: 135px;
+      height: 39px;
+    }
+  }
+
+
+  &__content {
+    // tablet
+    @media (min-width: 768px) {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  }
+  &__container-1 {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    // talbet
+    @media (min-width: 768px) {
+      width: 100%;
+    }
+    // desktop
+    @media (min-width: 1024px) {
+      width: 222px;
+      margin: 0;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    &--img-container {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+
+  &__container-2 {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    // talbet
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 100px;
+    }
+    // desktop
+    @media (min-width: 1024px) {
+      margin: 2px 0 0 75px;
+    }
+    // desktop xl
+    @media (min-width: 1440px) {
+      margin: 3px 0 0 222px;
+      gap: 200px;
+    }
+  }
+  &__links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .link:hover {
+      color: #6c9bff !important;
+      transition: .4s;
+    }
+  }
+
+  &__container-3 {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    // talbet
+    @media (min-width: 768px) {
+      margin-left: 200px;
+      gap: 11px;
+    }
+    // desktop
+    @media (min-width: 1024px) {
+      margin: 3px 0 0 100px;
+    }
+    // desktop xl
+    @media (min-width: 1024px) {
+      margin: 3px 0 0 185px;
+    }
+
+    .container {
+      width: 28px;
+      height: 27px;
+      border: 1px solid #dfe4f0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &:hover {
+        border: 1px solid #6c9bff;
+        transform: scale(1.1);
+        transition: .4s;
+        .fb-icon,
+        .tw-icon,
+        .ig-icon {
+          filter: invert(50%) sepia(92%) saturate(1069%) hue-rotate(199deg) brightness(104%) contrast(101%);
+        }
+      }
+
+      .fb-icon {
+        width: 7px;
+        height: 13px;
+      }
+      .tw-icon {
+        width: 11px;
+        height: 10px;
+      }
+      .ig-icon {
+        width: 13px;
+        height: 13px;
+      }
+    }
+  }
+
+}

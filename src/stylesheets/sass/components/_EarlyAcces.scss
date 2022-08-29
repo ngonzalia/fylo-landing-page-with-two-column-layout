@@ -1,0 +1,114 @@
+.early-acces {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 54px 47px 71px 48px;
+  background: #575988;
+  // desktop
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    align-items: unset;
+  }
+  // desktop xl
+  @media (min-width: 1440px) {
+    height: 322px;
+    padding: 100px 120px 0 80px;
+    justify-content: space-between;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    // desktop
+    @media (min-width: 1024px) {
+      align-items: flex-start;
+      width: 533px;
+    }
+    // desktop xl
+    @media (min-width: 1440px) {
+      height: 137px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    // tablet
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+    // desktop
+    @media (min-width: 1024px) {
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 12px;
+    }
+    // desktop xl
+    @media (min-width: 1440px) {
+      width: 480px;
+      min-height: 112px;
+      max-height: 130px;
+    }
+
+    p {
+      margin-top: -4px;
+      // desktop xl
+      @media (min-width: 1440px) {
+        margin-top: -12px;
+      }
+    }
+  }
+  input {
+    width: 240px;
+    height: 32px;
+    box-shadow: 1px 1px 3px rgba(7, 4, 59, 0.157043);
+    border-radius: 1.47059px;
+    // tablet
+    @media (min-width: 768px) {
+      width: 300px;
+      height: 48px;
+      border-radius: 3.125px;
+    }
+    // desktop
+    @media (min-width: 1024px) {
+      width: 480px;
+    }
+  }
+  &__email {
+    padding: 11px 8px 9px 8px;
+    border-radius: 1.47059px;
+    border: none;
+    &:focus-visible {
+      outline: none;
+    }
+    &::placeholder {
+      color: #c0c0c0;
+    }
+    // desktop
+    @media (min-width: 1024px) {
+      padding: 16px 22px 18px 22px;
+    }
+  }
+  &__btn {
+    padding: 11px auto 9px auto;
+    background: #2f65f8;
+    box-shadow: 1px 1px 3px rgba(7, 4, 59, 0.157043);
+    border-radius: 1.47059px;
+    border: none;
+    cursor: pointer;
+    // tablet
+    @media (min-width: 768px) {
+      width: 200px !important;
+    }
+    &:hover {
+      background: #6c9bff;
+      transition: .4s;
+    }
+  }
+}

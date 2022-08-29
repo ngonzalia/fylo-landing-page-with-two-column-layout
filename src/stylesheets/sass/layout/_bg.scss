@@ -1,0 +1,13 @@
+.curve-bg {
+  margin-top: 90px;
+  background-image: url('../assets/bg-curve-mobile.svg');
+  height: 53px;
+  background-size: 100% 53px;
+  // talbet
+  @media (min-width: 768px) {
+    margin-top: 164px;
+    background-image: url('../assets/bg-curve-desktop.svg');
+    height: 114px;
+    background-size: 100% 114px;
+  }
+}

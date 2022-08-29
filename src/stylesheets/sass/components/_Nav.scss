@@ -1,0 +1,31 @@
+.nav {
+  padding: 24px 24px 0 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  // tablet
+  @media (min-width: 768px) {
+    padding: 65px 80px 0 80px;
+  }
+
+  &__img {
+    width: 80px;
+    height: 24px;
+    // tablet
+    @media (min-width: 768px) {
+      width: 166px;
+      height: 49px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    // tablet
+    @media (min-width: 768px) {
+      gap: 58px;
+    }
+  }
+}
