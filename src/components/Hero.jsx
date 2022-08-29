@@ -16,18 +16,6 @@ const Hero = () => {
     }
   };
   
-  const windowClick = () => {
-    const regex =  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    const errorText = document.getElementById('error-text');
-    const email = document.getElementById('email');
-    
-    if(email.classList.contains('error-border')) {
-      window.addEventListener('click', () => {
-        errorText.classList.add('hide');
-        email.classList.remove('error-border');
-      });
-    };
-  };
 
   return (
     <main className='hero' onClick='windowClick'>
