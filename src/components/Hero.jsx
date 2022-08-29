@@ -18,7 +18,7 @@ const Hero = () => {
   
 
   return (
-    <main className='hero' onClick='windowClick'>
+    <main className='hero'>
       <div className='hero__img-container'>
         <img
           src={Illustration1}
