@@ -2,12 +2,12 @@ import Illustration1 from '../assets/illustration-1.svg';
 
 const Hero = () => {
 
-  const regex =  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  const errorText = document.getElementById('error-text');
-  const email = document.getElementById('email');
-
   const validate = () => {
+      const regex =  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      const errorText = document.getElementById('error-text');
+      const email = document.getElementById('email');
 
+    
     if(!regex.test(email.value)) {
       errorText.classList.remove('hide');
       email.classList.add('error-border');
