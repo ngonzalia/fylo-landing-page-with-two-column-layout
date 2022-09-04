@@ -11,7 +11,7 @@ import './stylesheets/main.css';
 const App = () => {
 
   return (
-    <div className='App'>
+    <div className='App' id='app'>
       <Nav />
       <Hero />
       <div className='curve-bg'></div>

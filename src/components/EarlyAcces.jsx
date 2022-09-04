@@ -4,8 +4,7 @@ const EarlyAcces = () => {
     const regex =  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const errorText = document.getElementById('error-text-b');
     const emailB = document.getElementById('email-b');
-    
-    console.log('click')
+    const app = document.getElementById('app');
 
     if(!regex.test(emailB.value)) {
       errorText.classList.remove('hide');
@@ -13,6 +12,11 @@ const EarlyAcces = () => {
     } else {
       window.location.href='https://www.frontendmentor.io/profile/ngonzalia';
     }
+
+    app.addEventListener('click', () => {
+      errorText.classList.add('hide');
+      emailB.classList.remove('error-border-2');
+    });
   };
 
   return (

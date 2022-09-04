@@ -6,7 +6,7 @@ const Hero = () => {
     const regex =  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const errorText = document.getElementById('error-text');
     const email = document.getElementById('email');
-
+    const app = document.getElementById('app');
     
     if(!regex.test(email.value)) {
       errorText.classList.remove('hide');
@@ -14,6 +14,11 @@ const Hero = () => {
     } else {
       window.location.href='https://www.frontendmentor.io/profile/ngonzalia';
     }
+
+    app.addEventListener('click', () => {
+      errorText.classList.add('hide');
+      email.classList.remove('error-border');
+    });
   };
   
 
